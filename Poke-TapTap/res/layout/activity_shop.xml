@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#f0f0f0" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#3b4cca" android:id="@id/tvShopTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trainer Shop" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="18.0sp" android:textColor="#333333" android:id="@id/tvCurrentPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="Your Points: 0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvShopTitle" />
+    <androidx.cardview.widget.CardView android:id="@id/cardItem1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" app:cardCornerRadius="12.0dp" app:cardElevation="4.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvCurrentPoints">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap Reducer (Permanent)" />
+            <TextView android:textSize="14.0sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="Reduces required taps by 50% for all encounters." />
+            <Button android:textColor="#ffffff" android:id="@id/btnBuyReducer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="Buy for 200 Points" android:backgroundTint="#cc0000" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

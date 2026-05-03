@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph2" app:startDestination="@id/First2Fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/first_fragment_label" android:name="com.haku.taptapme.First2Fragment" android:id="@id/First2Fragment">
+        <action android:id="@id/action_First2Fragment_to_Second2Fragment" app:destination="@id/Second2Fragment" />
+    </fragment>
+    <fragment android:label="@string/second_fragment_label" android:name="com.haku.taptapme.Second2Fragment" android:id="@id/Second2Fragment">
+        <action android:id="@id/action_Second2Fragment_to_First2Fragment" app:destination="@id/First2Fragment" />
+    </fragment>
+</navigation>
