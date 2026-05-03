@@ -78,7 +78,7 @@
     move-result v0
 
 
-    
+    if-nez v0, :cond_0
 
     sget-object v0, Lcom/haku/taptapme/enums/License;->LEVEL_1:Lcom/haku/taptapme/enums/License;
 
